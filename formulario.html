@@ -1,10 +1,33 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Evaluación</title>
+   
 </head>
 <body>
-    
+    <form>
+        
+        <input type="text" placeholder="Nombre"><br><br>
+        
+        <label>Sexo:</label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+        
+        <label for="nacimiento">Año Nacimiento:</label>
+        <select id="nacimiento" name="nacimiento">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+        </select><br><br>
+        
+        <label for="terminos">¿Aceptas los términos?</label>
+        <input type="checkbox" id="terminos" name="terminos"><br><br>
+        
+        <input type="submit" value="enviar">
+    </form>
 </body>
 </html>
